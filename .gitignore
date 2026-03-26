@@ -1,0 +1,6 @@
+transit.db
+backups/
+.env
+data/raw/
+__pycache__/
+*.pyc
