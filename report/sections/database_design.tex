@@ -1,0 +1,64 @@
+% ============================================================
+%  Section: Database Design and Storage
+% ============================================================
+
+\subsection{Database System}
+
+The project uses \textbf{SQLite} as its relational database engine. SQLite is an
+embedded, serverless database that stores the entire database as a single
+\texttt{.db} file. This choice was made for several practical reasons:
+
+\begin{itemize}
+    \item No server installation or configuration required.
+    \item Native Python support via the built-in \texttt{sqlite3} module.
+    \item Sufficient performance for analytical queries on millions of rows.
+    \item Portability: the database file can be shared or recreated from the pipeline.
+\end{itemize}
+
+\subsection{Schema Design}
+
+% Add your ER diagram here once you have it.
+% Placeholder:
+\begin{figure}[H]
+    \centering
+    % \includegraphics[width=0.85\textwidth]{figures/er_diagram.png}
+    \fbox{\parbox{0.85\textwidth}{\centering\vspace{2cm}
+    \textit{[Insert ER diagram here]}
+    \vspace{2cm}}}
+    \caption{Entity-Relationship Diagram for the MTA Transit Pulse database}
+    \label{fig:er_diagram}
+\end{figure}
+
+The database consists of the following tables:
+
+\subsubsection{\texttt{stations}}
+Stores one row per unique station, normalized from the raw STATION column.
+
+\subsubsection{\texttt{turnstiles}}
+Stores one row per unique turnstile unit (identified by C/A + UNIT + SCP).
+Each turnstile is linked to a station via foreign key.
+
+\subsubsection{\texttt{readings}}
+Stores the individual counter readings with parsed timestamps.
+This is the largest table, with one row per four-hour interval per turnstile.
+
+\subsubsection{\texttt{daily\_ridership}}
+A derived/aggregated table that pre-computes daily net entries and exits per
+station. This table is rebuilt by the analysis pipeline and powers the
+Streamlit dashboard queries.
+
+\subsection{Key SQL Patterns}
+
+% Once you've written your queries, paste 1-2 representative ones here.
+% Example placeholder:
+
+\begin{lstlisting}[style=sqlstyle, caption={Example: Top 10 stations by average daily entries}]
+SELECT
+    s.station_name,
+    AVG(dr.net_entries) AS avg_daily_entries
+FROM daily_ridership dr
+JOIN stations s ON dr.station_id = s.id
+GROUP BY s.station_name
+ORDER BY avg_daily_entries DESC
+LIMIT 10;
+\end{lstlisting}

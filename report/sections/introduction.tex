@@ -1,0 +1,43 @@
+% ============================================================
+%  Section: Introduction & Project Scope
+% ============================================================
+
+The New York City subway system is one of the largest and most complex urban
+transit networks in the world, serving millions of riders daily across
+\textbf{472 stations} and \textbf{27 lines}. Understanding ridership patterns,
+identifying peak usage periods, and tracking station-level traffic are problems
+with real operational significance for the MTA and for city planners.
+
+This project, \textit{MTA Transit Pulse}, builds a complete data management pipeline
+around the MTA's publicly available weekly turnstile data. Rather than simply
+downloading and plotting a spreadsheet, the goal is to design and implement a
+\textit{system}: one that collects, validates, stores, queries, and presents data
+in a reproducible and maintainable way.
+
+\subsection{Motivation}
+
+% Write 2-3 sentences about why this project is interesting to you personally
+% and why subway data is a meaningful dataset to work with.
+\textit{[Add your personal motivation here.]}
+
+\subsection{Project Objectives}
+
+The system is designed to satisfy the following objectives:
+
+\begin{enumerate}
+    \item Automate the collection of MTA turnstile CSV data from the public portal.
+    \item Clean and validate raw data, handling known MTA data quality issues.
+    \item Store the processed data in a normalized SQLite relational database.
+    \item Enable SQL-driven analysis of ridership patterns by line, station, and time.
+    \item Provide automated database backups and version-controlled source code.
+    \item Deliver an interactive Streamlit dashboard for non-technical data exploration.
+    \item Document the full pipeline in a reproducible GitHub repository.
+\end{enumerate}
+
+\subsection{Scope and Limitations}
+
+The project focuses on \textbf{entry and exit counts} from MTA turnstiles, which serve
+as a proxy for ridership. The initial dataset covers
+\textit{[insert your date range once you decide it]}.
+Real-time train positions and delay data are outside the scope of this version,
+though the database schema is designed to accommodate future enrichment.

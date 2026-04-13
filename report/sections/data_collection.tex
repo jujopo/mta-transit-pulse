@@ -1,0 +1,65 @@
+% ============================================================
+%  Section: Data Collection
+% ============================================================
+
+\subsection{Data Source}
+
+The primary data source is the \textbf{MTA Turnstile Dataset}, published weekly
+by the Metropolitan Transportation Authority at:
+\url{http://web.mta.info/developers/turnstile.html}
+
+Each weekly file is a CSV containing cumulative turnstile counter readings recorded
+at approximately four-hour intervals across all subway stations. The columns in each
+raw file are described in Table~\ref{tab:raw_schema}.
+
+\begin{table}[H]
+\centering
+\caption{Raw MTA Turnstile CSV Column Schema}
+\label{tab:raw_schema}
+\begin{tabular}{@{}lll@{}}
+\toprule
+\textbf{Column} & \textbf{Type} & \textbf{Description} \\
+\midrule
+C/A        & String  & Control area (booth identifier) \\
+UNIT       & String  & Remote unit ID \\
+SCP        & String  & Subunit / channel / position \\
+STATION    & String  & Station name \\
+LINENAME   & String  & Lines serving this station \\
+DIVISION   & String  & Operating division (BMT, IND, IRT) \\
+DATE       & String  & Date of reading (MM/DD/YYYY) \\
+TIME       & String  & Time of reading (HH:MM:SS) \\
+DESC       & String  & Reading type (REGULAR or RECOVR AUD) \\
+ENTRIES    & Integer & Cumulative entry counter \\
+EXITS      & Integer & Cumulative exit counter \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Collection Strategy}
+
+% Describe your collect.py script here once you've written it.
+% Topics to address:
+%   - How URLs are constructed (the MTA uses a predictable date-based pattern)
+%   - How many weeks of data you downloaded
+%   - Where raw files are stored (data/raw/)
+%   - How you avoided re-downloading files already on disk
+
+\textit{[Complete this subsection after writing collect.py]}
+
+\subsection{Known Data Quality Issues}
+
+The MTA turnstile data is known to contain several quality issues that must be
+addressed during preprocessing:
+
+\begin{itemize}
+    \item \textbf{Counter resets:} Turnstile counters periodically reset to zero,
+          producing negative delta values when subtracted from the previous reading.
+    \item \textbf{Anomalous spikes:} Occasionally a single reading shows millions
+          of entries, far beyond any plausible passenger count.
+    \item \textbf{Inconsistent station names:} The same physical station may appear
+          under slightly different name strings across different files.
+    \item \textbf{Duplicate rows:} Some audit entries (DESC = RECOVR AUD) overlap
+          with regular readings.
+\end{itemize}
+
+These issues are addressed in Section~\ref{sec:cleaning}.

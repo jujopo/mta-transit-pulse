@@ -1,0 +1,246 @@
+% ============================================================
+%  MTA Transit Pulse — Project Report
+%  Data Management Course
+% ============================================================
+\documentclass[12pt, letterpaper]{article}
+
+% --- Packages -----------------------------------------------
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[margin=1in]{geometry}
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage{titling}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{amsmath}
+\usepackage{parskip}
+\usepackage[backend=biber, style=apa]{biblatex}
+\addbibresource{references.bib}
+
+% --- Colors -------------------------------------------------
+\definecolor{subwayBlue}{RGB}{0, 57, 166}
+\definecolor{codeGray}{RGB}{245, 245, 245}
+\definecolor{codeGreen}{RGB}{0, 128, 0}
+\definecolor{codeComment}{RGB}{100, 100, 100}
+\definecolor{codePurple}{RGB}{128, 0, 128}
+
+% --- Code listing style -------------------------------------
+\lstdefinestyle{pythonstyle}{
+    backgroundcolor=\color{codeGray},
+    commentstyle=\color{codeComment}\itshape,
+    keywordstyle=\color{subwayBlue}\bfseries,
+    stringstyle=\color{codeGreen},
+    basicstyle=\ttfamily\small,
+    breakatwhitespace=false,
+    breaklines=true,
+    captionpos=b,
+    keepspaces=true,
+    numbers=left,
+    numbersep=8pt,
+    numberstyle=\tiny\color{codeComment},
+    showspaces=false,
+    showstringspaces=false,
+    showtabs=false,
+    tabsize=4,
+    frame=single,
+    rulecolor=\color{gray!30},
+    language=Python
+}
+
+\lstdefinestyle{sqlstyle}{
+    backgroundcolor=\color{codeGray},
+    commentstyle=\color{codeComment}\itshape,
+    keywordstyle=\color{subwayBlue}\bfseries,
+    stringstyle=\color{codeGreen},
+    basicstyle=\ttfamily\small,
+    breaklines=true,
+    captionpos=b,
+    numbers=left,
+    numbersep=8pt,
+    numberstyle=\tiny\color{codeComment},
+    frame=single,
+    rulecolor=\color{gray!30},
+    language=SQL
+}
+
+% --- Section formatting -------------------------------------
+\titleformat{\section}
+  {\large\bfseries\color{subwayBlue}}
+  {\thesection}{1em}{}[\titlerule]
+
+\titleformat{\subsection}
+  {\normalsize\bfseries}
+  {\thesubsection}{1em}{}
+
+\titleformat{\subsubsection}
+  {\normalsize\itshape}
+  {\thesubsubsection}{1em}{}
+
+% --- Header / Footer ----------------------------------------
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\small MTA Transit Pulse}
+\rhead{\small Data Management — \the\year}
+\cfoot{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+
+% --- Hyperlink style ----------------------------------------
+\hypersetup{
+    colorlinks=true,
+    linkcolor=subwayBlue,
+    urlcolor=subwayBlue,
+    citecolor=subwayBlue,
+    pdftitle={MTA Transit Pulse — Data Management Project},
+}
+
+% --- Title block --------------------------------------------
+\title{
+    \vspace{-1cm}
+    {\large Data Management — Course Project Report}\\[0.4cm]
+    \rule{\linewidth}{1.5pt}\\[0.3cm]
+    {\LARGE\bfseries\color{subwayBlue} MTA Transit Pulse}\\[0.2cm]
+    {\large A Data Pipeline for NYC Subway Ridership Analysis}\\
+    \rule{\linewidth}{1pt}
+}
+\author{
+    Your Name Here\\
+    \small Student ID: XXXXXXX\\
+    \small Department of Computer Science / Your Department\\
+    \small Stony Brook University
+}
+\date{\today}
+
+% ============================================================
+\begin{document}
+% ============================================================
+
+\maketitle
+\thispagestyle{empty}
+
+% --- Abstract -----------------------------------------------
+\begin{abstract}
+\noindent
+This report documents the design and implementation of \textit{MTA Transit Pulse},
+a practical data management system built around New York City subway turnstile data
+published by the Metropolitan Transportation Authority (MTA). The project demonstrates
+a complete data lifecycle: collection from public sources, cleaning and validation,
+relational storage in SQLite, SQL-driven analysis, automated backup, and interactive
+visualization through a Streamlit dashboard. The system is version-controlled on GitHub
+and documented throughout using Markdown and this report. Key findings include
+ridership patterns across subway lines, peak usage hours, and station-level traffic
+distributions.
+\end{abstract}
+
+\vspace{0.5cm}
+\tableofcontents
+\newpage
+
+% ============================================================
+\section{Introduction}
+\input{sections/introduction}
+
+% ============================================================
+\section{Project Scope and Objectives}
+\label{sec:scope}
+\input{sections/introduction}
+% NOTE: update this to reference a dedicated scope section
+% once you separate them, or merge scope into introduction.
+
+% ============================================================
+\section{Data Collection}
+\label{sec:data_collection}
+\input{sections/data_collection}
+
+% ============================================================
+\section{Data Cleaning and Preprocessing}
+\label{sec:cleaning}
+% Write this section after completing clean.py
+% Topics to cover:
+%   - What problems you found in the raw data
+%   - How you handled missing values
+%   - How you normalized station names
+%   - Row counts before and after cleaning
+\begin{quote}
+    \textit{[Complete this section after finishing clean.py]}
+\end{quote}
+
+% ============================================================
+\section{Database Design and Storage}
+\label{sec:database}
+\input{sections/database_design}
+
+% ============================================================
+\section{Data Analysis}
+\label{sec:analysis}
+\input{sections/analysis}
+
+% ============================================================
+\section{Backup and Security Measures}
+\label{sec:backup}
+% Topics to cover:
+%   - Your backup script and schedule
+%   - What is .gitignored and why
+%   - How you handled the .env file
+\begin{quote}
+    \textit{[Complete this section after finishing your backup script]}
+\end{quote}
+
+% ============================================================
+\section{Data Maintenance and Updates}
+\label{sec:maintenance}
+% Topics to cover:
+%   - How new weekly turnstile files get ingested
+%   - Deduplication strategy
+%   - How you'd schedule automated updates
+\begin{quote}
+    \textit{[Complete this section after your pipeline is running end-to-end]}
+\end{quote}
+
+% ============================================================
+\section{Version Control and Documentation}
+\label{sec:versioning}
+% Topics to cover:
+%   - Git workflow you followed (commits, branches if any)
+%   - README structure
+%   - How this report relates to the codebase
+\begin{quote}
+    \textit{[Complete this section near the end of the project]}
+\end{quote}
+
+% ============================================================
+\section{Visualization}
+\label{sec:visualization}
+\input{sections/visualization}
+
+% ============================================================
+\section{Streamlit User Interface}
+\label{sec:ui}
+% Topics to cover:
+%   - How the app is structured
+%   - What queries it runs against SQLite
+%   - Screenshots of the interface
+%   - How to run it locally
+\begin{quote}
+    \textit{[Complete this section after finishing streamlit\_app.py]}
+\end{quote}
+
+% ============================================================
+\section{Conclusion}
+\label{sec:conclusion}
+\input{sections/conclusion}
+
+% ============================================================
+\newpage
+\printbibliography[title={References}]
+
+\end{document}

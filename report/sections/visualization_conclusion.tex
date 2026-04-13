@@ -1,0 +1,47 @@
+% ============================================================
+%  Section: Visualization
+% ============================================================
+
+The results of the analysis are presented through two complementary tools:
+a \textbf{Tableau Public dashboard} for static, publication-quality charts,
+and a \textbf{Streamlit web application} for interactive querying.
+
+\subsection{Tableau Dashboard}
+
+% Insert screenshots once your Tableau workbook is complete.
+\textit{[Add Tableau screenshots and description here]}
+
+\subsection{Streamlit Application}
+
+% Insert screenshots and describe the app's pages/features.
+\textit{[Add Streamlit screenshots and description here]}
+
+% ============================================================
+%  Section: Conclusion
+% ============================================================
+% (This file is input twice in main.tex — once for visualization,
+%  once for conclusion. Split into two files when you fill them in.)
+
+\subsection{Summary}
+
+\textit{[Write a 1-2 paragraph summary of what you built and what you found.]}
+
+\subsection{Challenges and Lessons Learned}
+
+\textit{[Describe the hardest parts: data quality issues, SQL problems you debugged,
+anything that didn't go as planned and how you resolved it.]}
+
+\subsection{Future Work}
+
+If this project were extended, the following enhancements would add significant value:
+
+\begin{itemize}
+    \item Integration of real-time GTFS delay feeds to correlate ridership drops
+          with service disruptions.
+    \item Weather data enrichment to test the hypothesis that rain increases
+          ridership on certain lines.
+    \item A PostgreSQL migration to support multi-user access and larger datasets.
+    \item Scheduled ingestion via a cloud function (AWS Lambda or GitHub Actions)
+          so the database updates automatically every Monday when MTA publishes
+          the new weekly file.
+\end{itemize}
