@@ -2,5 +2,6 @@ transit.db
 backups/
 .env
 data/raw/
+data/clean/
 __pycache__/
 *.pyc

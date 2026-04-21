@@ -14,8 +14,11 @@ load_dotenv()
 TOKEN = os.getenv("SOCRATA_APP_TOKEN")
 BASE_URL = "https://data.ny.gov/resource/wujg-7c2s.json"
 LIMIT = 500_000                     # Rows per request
-START_DATE = "2020-01-01T00:00:00"  # Start of the dataset
-OUTPUT_DIR = "data/raw"
+START_DATE = "2023-01-01T00:00:00"  # Start of the dataset
+END_DATE = "2023-12-31T23:59:59"
+OUTPUT_DIR = "data/raw/2023"
+
+
 
 # --- Main fetch function --------------------------------------------------
 
@@ -24,11 +27,11 @@ def fetch_page(offset):
     Fetch one page of data from the API.
     Returns a list of dicts (the JSON rows), or empty list if failed.
     """
-    
+    where_clause = f"transit_timestamp >= '{START_DATE}' AND transit_timestamp <= '{END_DATE}'"
     params = {
         "$limit": LIMIT,
         "$offset": offset,
-        "$where": f"transit_timestamp >= '{START_DATE}'",
+        "$where": where_clause,
         "$order": "transit_timestamp ASC" 
     }
     
