@@ -5,6 +5,7 @@ sys.path.append(os.path.join(os.path.dirname(__file__), '..', '..', 'src'))
 import sqlite3
 import pandas as pd
 import matplotlib.pyplot as plt
+import matplotlib.ticker as mticker
 import streamlit as st
 from style import apply_mta_theme, mta_header
 
