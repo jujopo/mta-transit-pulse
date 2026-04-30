@@ -1,0 +1,507 @@
+\documentclass{beamer}
+
+% ======== BASIC THEME SETUP ========
+\usetheme{Madrid} % Clean and simple base theme
+\usecolortheme{default}
+\usepackage{tikz}
+\usepackage{comment}
+\usepackage{media9}
+\usepackage{graphicx}
+\usepackage{animate}
+\usepackage{booktabs}
+\usepackage{array}
+
+\usetikzlibrary{positioning, shapes, arrows.meta}
+
+% ======== CUSTOM COLORS ========
+\definecolor{deepNavy}{RGB}{10,15,35} % dark navy background
+\definecolor{accentBlue}{RGB}{80,150,255} % accent color for titles
+\definecolor{softWhite}{RGB}{230,230,230} % light text
+
+% ======== COLOR SETTINGS ========
+\setbeamercolor{background canvas}{bg=deepNavy}
+\setbeamercolor{normal text}{fg=softWhite}
+\setbeamercolor{frametitle}{fg=accentBlue,bg=deepNavy}
+\setbeamercolor{title}{fg=accentBlue}
+\setbeamercolor{structure}{fg=accentBlue}
+\setbeamercolor{itemize item}{fg=accentBlue}
+
+% ======== CUSTOM TITLE DIVIDER ========
+\setbeamertemplate{frametitle}{
+	\nointerlineskip
+	\begin{beamercolorbox}[wd=\paperwidth,ht=0.6cm,dp=0.3cm,leftskip=0.8cm,rightskip=0.8cm]{frametitle}
+		\usebeamerfont{frametitle}\color{white}\insertframetitle
+	\end{beamercolorbox}
+	\vspace{0.3cm}
+}
+\setbeamercolor{frametitle}{bg=accentBlue, fg=white}
+
+% ======== OPTIONAL CLEANUP ========
+\setbeamertemplate{navigation symbols}{} % remove bottom nav icons
+\setbeamertemplate{footline}{}            % remove footer line
+
+% ======== TITLE INFO ========
+\title{A Minimal Example}
+\author{Matthias Vogelgesang}
+\institute{Centre for Modern Beamer Themes}
+% ======== CLEAN FOOTER WITH SLIDE COUNTER ========
+\setbeamertemplate{footline}{
+	\leavevmode%
+	\hbox{%
+		\begin{beamercolorbox}[wd=\paperwidth,ht=2ex,dp=1ex,leftskip=1em,rightskip=1em]{footlinecolor}
+			\hfill
+			\usebeamerfont{footline}\textcolor{accentBlue}{\insertframenumber{} / \inserttotalframenumber}
+		\end{beamercolorbox}%
+	}%
+}
+
+
+
+
+% ======== BEGIN DOCUMENT ========
+\begin{document}
+	
+	\begin{frame}{MTA Transit Analytics}
+		\centering % centers all content in the frame
+		\Large{\textbf{The idea?}}\\
+		\vspace{0.5cm} % adds some space below the image
+		\pause
+		Collect public available data published by the Metropolitan Transportation Authority (MTA), store it and visualize it. 
+	\end{frame}
+	
+	\begin{frame}{Outline}
+		\tableofcontents
+	\end{frame}
+	
+	\begin{frame}{The Objective}
+		Build an end-to-end data pipeline that pulls real MTA subway data, cleans and stores it in a local database, analyzes patterns and trends, and visualizes the results in a dashboard.
+		
+		\vspace{0.8cm}
+		\centering
+		\scalebox{0.8}{
+			\begin{tikzpicture}[
+				timeline/.style={
+					thick,
+					accentBlue
+				},
+				event/.style={
+					circle,
+					draw=accentBlue,
+					fill=accentBlue!15,
+					minimum size=6mm,
+					inner sep=2pt
+				},
+				textstyle/.style={
+					text width=2.8cm,
+					align=center,
+					font=\small,
+					softWhite
+				}
+				]
+				
+				% Timeline line
+				\draw[timeline] (0,0) -- (12,0);
+				
+				% Events (nodes)
+				\node[event] (A) at (0,0) {};
+				\node[event] (B) at (2.4,0) {};
+				\node[event] (C) at (4.8,0) {};
+				\node[event] (D) at (7.2,0) {};
+				\node[event] (E) at (9.6,0) {};
+				\node[event] (F) at (12,0) {};
+				
+				% Labels below timeline
+				\node[textstyle, below=0.6cm of A] {API calls};
+				\node[textstyle, below=0.6cm of B] {Storage (.csv)};
+				\node[textstyle, below=0.6cm of C] {Cleaning};
+				\node[textstyle, below=0.6cm of D] {DB Processing (.db)};
+				\node[textstyle, below=0.6cm of E] {Analysis};
+				\node[textstyle, below=0.6cm of F] {Visualization};
+				
+				% Labels above timeline
+				\node[textstyle, above=0.6cm of A] {1};
+				\node[textstyle, above=0.6cm of B] {2};
+				\node[textstyle, above=0.6cm of C] {3};
+				\node[textstyle, above=0.6cm of D] {4};
+				\node[textstyle, above=0.6cm of E] {5};
+				\node[textstyle, above=0.6cm of F] {6};
+				
+			\end{tikzpicture}
+		}
+		
+		\vspace{0.8cm}
+		\centering
+		\textit{\small Cronological setup}
+		
+	\end{frame}
+	
+	\begin{frame}{1. API calls, data issues, estimated times, scripts.}
+		On this stage the objective is to collect the publicly available data. A  Google search revealed this dataset:
+		
+		\vspace{0.8cm}
+		
+		\centering
+		MTA Subway Hourly Ridership: 2020-2024
+		
+		\vspace{0.8cm}
+		\resizebox{\textwidth}{!}{% % This scales the table to text width
+			\begin{tabular}{@{}>{\bfseries}l p{0.9\textwidth}@{}}
+				\toprule
+				Category & Information \\
+				\midrule
+				Organization & New York City Transit, Staten Island Railway, Roosevelt Island Operating Corporation \\
+				Time Period & 2020 -- 2024 \\
+				Posting Frequency & Static - Not Updated \\
+				Dataset Owner & Metropolitan Transportation Authority \\
+				Contact Information & \texttt{OpenData@mtahq.org} \\
+				Coverage & New York City \\
+				Granularity & Hour, mode, subway station complex, fare medium, class of fare payment \\
+				\bottomrule
+			\end{tabular}
+		}%
+	\end{frame}
+	
+	\begin{frame}{1. Dataset overview}
+		\centering % centers all content in the frame
+		\Large{\textbf{What's in this dataset?}} \\
+		\vspace{0.2cm} % adds some space below the image
+		\pause
+		We have 121M rows, 12 columns.
+		
+		\vspace{0.4cm}
+		\centering
+		\resizebox{\textwidth}{!}{% % This scales the table to text width
+			\begin{tabular}{@{}>{\bfseries}l p{1.1\textwidth}@{}}
+				\toprule
+				Column name & Description \\
+				\midrule
+				transit\_timestamp & Timestamp payment took place in local time. \\
+				transit\_mode & 	
+				Distinguishes between the subway, Staten Island Railway, and the Roosevelt Island Tram \\
+				station\_complex\_id & unique identifier for station complexes \\
+				ridership & Total number of riders that entered a subway complex via OMNY or MetroCard at the specific hour and for that specific fare type. \\
+				fare\_class\_category & The class of fare payment used for the trip. \\
+				borough & Represents one of the boroughs of New York City serviced by the subway system \\
+				payment\_method & Whether the payment method used to enter was from OMNY or MetroCard. \\
+				\bottomrule
+			\end{tabular}
+		}%
+		
+		
+	\end{frame}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		\begin{frame}{1. API calls, data issues, estimated times, scripts.}
+		\begin{columns}[c]
+			\begin{column}{.5\textwidth}
+				\begin{figure}
+					\centering
+					%\includegraphics[width=0.8\textwidth]{}
+					\caption{\small{Urbain Le Verrier}}
+				\end{figure}      
+			\end{column}
+			% create the column with the second image, that also
+			% occupies half of the slide
+			\begin{column}{.5\textwidth}
+				\begin{figure}
+					\centering
+					
+					\caption{\small{John Couch Adams}}
+				\end{figure}
+			\end{column}
+		\end{columns}
+	\end{frame}
+	
+	\begin{frame}{The stars of the show II}
+		\begin{columns}[c]
+			\begin{column}{.5\textwidth}
+				\begin{figure}
+					\centering
+					
+					\caption{\small{Alexis Bouvard}}
+				\end{figure}      
+			\end{column}
+			% create the column with the second image, that also
+			% occupies half of the slide
+			\begin{column}{.5\textwidth}
+				\begin{figure}
+					\centering
+					
+					\caption{\small{Johann Gottfried Galle}}
+				\end{figure}
+			\end{column}
+		\end{columns}
+		
+		Galle found Neptune in the same night he received Le Verrier's letter, within 1° of the predicted position.
+	\end{frame}	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	\begin{frame}{The stars of the show II}
+		\begin{columns}[c]
+			\begin{column}{.5\textwidth}
+				\begin{figure}
+					\centering
+					
+					\caption{\small{Alexis Bouvard}}
+				\end{figure}      
+			\end{column}
+			% create the column with the second image, that also
+			% occupies half of the slide
+			\begin{column}{.5\textwidth}
+				\begin{figure}
+					\centering
+			
+					\caption{\small{Johann Gottfried Galle}}
+				\end{figure}
+			\end{column}
+		\end{columns}
+		
+		Galle found Neptune in the same night he received Le Verrier's letter, within 1° of the predicted position.
+	\end{frame}	
+	
+	
+	\begin{frame}{Motivation: Uranus had residuals I}
+		
+		\begin{columns}[c]
+			% create the column with the first image, that occupies
+			% half of the slide
+			\begin{column}{.5\textwidth}
+				\begin{figure}
+					\centering
+				
+					\caption{\small{Table showing the errors in longitude for the predicted orbit of Uranus}}
+				\end{figure}      
+			\end{column}
+			% create the column with the second image, that also
+			% occupies half of the slide
+			\begin{column}{.5\textwidth}
+				
+			\end{column}
+		\end{columns}
+		\vspace{5mm}
+		\small{Observed positions of Uranus deviated from predictions using only known planets (Bouvard's tables). Bouvard got the bright idea (probably from Laplace) that perhaps the two large planets, Jupiter and Saturn, were ``perturbing'' the orbit of Uranus}
+	\end{frame}
+	
+	
+	
+	\begin{frame}{Perturbation theory I}
+		Perturbation theory is a mathematical approach that approximates solutions to problems that cannot be solved analytically, starting from the exact solution of a simpler related case.
+		\vspace{3mm}
+		
+		\textbf{Base problem (unperturbed orbit): two bodies (Sun + Planet U)}
+		\small
+		\begin{align*}
+			\text{(1) Gravitational Force:} \quad & \mathbf{F} = -\,G\,\frac{M_\odot m_2}{r^2}\,\hat{\mathbf{r}} \\[4pt]
+			\text{(2) Newton’s Second Law:} \quad & \mathbf{F} = m_2\,\ddot{\mathbf{r}} \\[4pt]
+			\text{Combine:} \quad & m_2 \ddot{\mathbf{r}} = -G\,\frac{M_\odot m_2}{r^2}\,\frac{\mathbf{r}}{r} \\[4pt]
+			\Rightarrow \quad & \boxed{\ddot{\mathbf{r}} = -\frac{GM_\odot}{r^3}\,\mathbf{r}}
+		\end{align*}	
+		Solution: Keplerian ellipse with parameters $(a, e, i, \omega, \Omega, M)$.
+	\end{frame}
+	
+	
+	\begin{frame}{Perturbation theory II}
+		
+		\textbf{Perturbed problem (adding a third body): planet $P$ (mass $m'$ at $r'$)}
+		\[
+		\ddot{\mathbf r} = -\frac{G M}{r^3}\mathbf r + \epsilon\,\mathbf a_{\rm pert},\qquad
+		\mathbf a_{\rm pert} = -G m'\left(\frac{\mathbf r-\mathbf r'}{|\mathbf r-\mathbf r'|^3} + \frac{\mathbf r'}{r'^3}\right)
+		\]
+		where $\epsilon \ll 1$ and $a_{\rm pert}$ represents the gravitational influence of another planet.
+		
+		\medskip
+		Expanding orbital elements as:
+		\[
+		a(t) = a_0 + \epsilon a_1(t), \quad e(t) = e_0 + \epsilon e_1(t), \quad \ldots
+		\]
+		
+		Substituting and keeping first-order terms in $\epsilon$:
+		\[
+		\frac{d\omega}{dt} = \frac{3}{4}n\frac{m'}{M_\odot}\left(\frac{a}{a'}\right)^3\!\!\frac{1}{(1 - e'^2)^{3/2}}
+		\]
+		\textit{This gives the secular precession of the perihelion, i.e., the slow change in the orientation of a celestial body's orbit, primarily caused by gravitational interactions with other bodies in the system.}
+		
+	\end{frame}
+	
+	\begin{frame}{Perturbation theory III}
+		
+		\textbf{Interpretation:}
+		\Large
+		
+		Last equation can be just expressed as 
+		\[
+		\frac{d\omega}{dt} = C \, n \, \epsilon\left(\frac{a}{a'}\right)^3+\mathcal{O}(\epsilon^2)
+		\]
+		This means that a distant planet with small mass $m'$ produces a slow secular precession of Uranus’ perihelion (or a slow drift in mean longitude) proportional to $m'$ and $(a/a')^3$. Over decades this tiny rate integrates to an observable angular residual.
+	\end{frame}
+	
+	\begin{frame}{Perturbation theory IV}
+		
+		\centering
+		\textbf{Physical meaning of the previous equation}
+		\vspace{3mm}
+				
+		
+		\footnotesize Source: Wikipedia
+	\end{frame}
+	
+	\begin{frame}{Inverse perturbations}
+		\Large
+		Direct perturbations involve computing the effect of a known body, such as Jupiter’s influence on Uranus. However, Uranus’s orbit showed unexplained deviations.
+		\vspace{3mm}
+		
+		Le Verrier and Adams deduced that these were caused by an unknown planet—Neptune. 
+		\vspace{3mm}
+		
+		Inverse perturbation: the effect is observed but the cause (mass and position) must be inferred. Is much more complex than the direct case.
+	\end{frame}
+	
+	\begin{frame}{Timeline}
+		
+		\centering
+		\scalebox{0.8}{
+		\begin{tikzpicture}[
+			timeline/.style={
+				thick,
+				accentBlue
+			},
+			event/.style={
+				circle,
+				draw=accentBlue,
+				fill=accentBlue!15,
+				minimum size=6mm,
+				inner sep=2pt
+			},
+			textstyle/.style={
+				text width=2.8cm,
+				align=center,
+				font=\small,
+				softWhite
+			}
+			]
+			
+			% Timeline line
+			\draw[timeline] (0,0) -- (12,0);
+			
+			% Events (nodes)
+			\node[event] (kepler) at (0,0) {};
+			\node[event] (newton) at (2.4,0) {};
+			\node[event] (uranus) at (4.8,0) {};
+			\node[event] (bouvard) at (7.2,0) {};
+			\node[event] (leverrier) at (9.6,0) {};
+			\node[event] (neptune) at (12,0) {};
+			
+			% Labels below timeline
+			\node[textstyle, below=0.6cm of kepler] {1609–1619\\Kepler’s Laws};
+			\node[textstyle, below=0.6cm of newton] {1687\\Newton’s\\Gravitation};
+			\node[textstyle, below=0.6cm of uranus] {1781\\Herschel Discovers\\Uranus};
+			\node[textstyle, below=0.6cm of bouvard] {1821\\Bouvard’s\\Anomalies};
+			\node[textstyle, below=0.6cm of leverrier] {1845–1846\\Le Verrier \& Adams\\Predict New Planet};
+			\node[textstyle, below=0.6cm of neptune] {Sept 23, 1846\\Galle Observes\\Neptune};
+			
+			% Labels above timeline
+			\node[textstyle, above=0.6cm of kepler] {Foundation\\of Orbital Theory};
+			\node[textstyle, above=0.6cm of newton] {Mathematical\\Modeling};
+			\node[textstyle, above=0.6cm of uranus] {Astronomical\\Expansion};
+			\node[textstyle, above=0.6cm of bouvard] {Perturbation\\Detected};
+			\node[textstyle, above=0.6cm of leverrier] {Mathematical\\Prediction};
+			\node[textstyle, above=0.6cm of neptune] {Observation\\Confirmed};
+			
+		\end{tikzpicture}
+		}
+		
+		\vspace{0.8cm}
+		\centering
+		\textit{\small Chronological roadmap}
+		
+	\end{frame}
+	
+	\iffalse
+		\begin{frame}{Disturbing function and Lagrange planetary equations}
+			Define disturbing function $\mathcal R(\mathbf r,\mathbf r')$ so that
+			\[
+			\mathbf a_{\rm pert} = \nabla_{\mathbf r}\mathcal R.
+			\]
+			Lagrange planetary equations give rates of orbital elements (mean motion $n= \sqrt{GM/a^3}$):
+			\[
+			\frac{da}{dt}=\frac{2}{n a}\frac{\partial\mathcal R}{\partial \lambda},\quad
+			\frac{de}{dt}=\frac{\sqrt{1-e^2}}{n a^2 e}\frac{\partial\mathcal R}{\partial \omega} - \dots
+			\]
+			(where $\lambda$ is mean longitude, $\omega$ argument of perihelion).  (See standard texts / Laplace–Lagrange.)
+		\end{frame}
+		
+		\begin{frame}{Inverse perturbation — strategy}
+			\begin{enumerate}
+				\item Compute residuals in Uranus' mean longitude $\Delta\lambda_{\rm obs}(t)$ vs model without unknown planet.
+				\item Model secular response of $\lambda(t)$ to a distant perturber via analytical expansion of $\mathcal R$ (Legendre polynomial expansion) and orbit averaging.
+				\item Fit parameters (mass $m'$, semimajor axis $a'$, mean longitude $\lambda'_0$) to minimize residuals (linearize if $m'$ small).
+			\end{enumerate}
+			This is what Le Verrier / Adams effectively did: match observed secular discrepancies to a plausible perturbing orbit.
+		\end{frame}
+		
+		\begin{frame}{Sketch: expansion and secular term}
+			For $r<r'$ expand:
+			\[
+			\frac{1}{|\mathbf r-\mathbf r'|} = \frac{1}{r'}\sum_{\ell=0}^{\infty}\left(\frac{r}{r'}\right)^\ell P_\ell(\cos\psi).
+			\]
+			Averaging over fast angles removes short-period terms; leading secular contribution scales like $(a/a')^\ell$. For an outer perturber the dominant secular contribution to perihelion precession scales like
+			\[
+			\dot{\varpi} \sim n\left(\frac{m'}{M}\right)\left(\frac{a}{a'}\right)^3 \times \mathcal{O}(1),
+			\]
+			so small $m'$ at moderate $a'$ can still produce measurable $\dot\varpi$ or $\Delta\lambda$ over decades.
+		\end{frame}
+	\fi
+	
+	\begin{frame}{Numerical demo I}
+		\Large
+		I integrated a toy solar system in Python with the Sun, Jupiter, Saturn, Uranus; 
+		\vspace{3mm}
+		
+		(A) without Neptune, (B) adding Neptune. 
+		\vspace{3mm}
+		
+		I plotted Uranus' mean longitude difference vs time and show the secular drift produced by Neptune—the effect Le Verrier (and later Adams) inferred.
+	\end{frame}
+	
+	\begin{frame}{Numerical demo II}
+		\centering
+		\textbf{Simplified Coplanar Orbits}
+		\vspace{3mm}
+		
+		
+	\end{frame}
+	
+	\begin{frame}{Numerical demo III}
+		\centering
+		\textbf{Simplified Coplanar Orbits}
+		\vspace{3mm}
+		
+		
+	\end{frame}
+	
+			
+\end{document}

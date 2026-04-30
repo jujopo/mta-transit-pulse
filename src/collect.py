@@ -14,9 +14,9 @@ load_dotenv()
 TOKEN = os.getenv("SOCRATA_APP_TOKEN")
 BASE_URL = "https://data.ny.gov/resource/wujg-7c2s.json"
 LIMIT = 500_000                     # Rows per request
-START_DATE = "2023-01-01T00:00:00"  # Start of the dataset
-END_DATE = "2023-12-31T23:59:59"
-OUTPUT_DIR = "data/raw/2023"
+START_DATE = "2022-01-01T00:00:00"  # Start of the dataset
+END_DATE = "2022-12-31T23:59:59"
+OUTPUT_DIR = "data/raw/2022"
 
 
 

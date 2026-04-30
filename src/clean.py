@@ -11,14 +11,13 @@ import pandas as pd
 RAW_DIR = "data/raw"
 CLEAN_DIR = "data/clean"
 YEARS = [2020, 2021, 2022, 2023, 2024]
-OUTPUT_FILE = os.path.join(CLEAN_DIR, "clean_ridership.csv")
 
 # Define reasonable ridership values. 
 # The busiest station in NYC peaks at roughly 60,000 riders/hour.
 MIN_RIDERSHIP = 0
 MAX_RIDERSHIP = 100_000
 
-# --- Appennd helper ----------------------------------------------------------
+# --- Append helper ----------------------------------------------------------
 
 def append_to_year(df: pd.DataFrame, year: int):
     """
@@ -84,13 +83,6 @@ def clean(df: pd.DataFrame):
 
     return df
 
-def save_clean(df: pd.DataFrame):
-    """Save the cleaned DataFrame to data/clean/clean_ridership.csv"""
-    os.makedirs(CLEAN_DIR, exist_ok=True)
-    df.to_csv(OUTPUT_FILE, index=False, )
-    print(f"Saved {len(df):,} rows to {OUTPUT_FILE}")
-
-
 # --- Entry point -------------------------------------------------------------
 
 if __name__ == "__main__":
@@ -133,21 +125,6 @@ if __name__ == "__main__":
 
         # Free memory before loading the next page.
         del df_page
-
-    # # Final duplicates drop (Better to remove final duplicates in db)
-    # clean_files = sorted(glob.glob(os.path.join(CLEAN_DIR, "clean_*.csv")))
-
-    # if not clean_files:
-    #     print("No raw files found in data/clean/")
-    #     exit()
-
-    # print(f"Found {len(clean_files)} clean file(s).\n")
-
-    # for filepath in clean_files:
-    #     filename = os.path.basename(filepath)
-    #     print(f"Processing {filename}...")
-    #     df = pd.read_csv(filepath)
-    #     df.drop_duplicates(inplace=True)
 
     # Final summary across all years.
     print(f"\n{'-'*50}")
