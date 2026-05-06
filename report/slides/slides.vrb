@@ -1,0 +1,30 @@
+\frametitle{Data Quality Verification}
+\centering
+		\textit{First queries run after loading to check on integrity}\\
+		\vspace{0.15cm}
+		\begin{block}{Row count by year}
+			\begin{lstlisting}[style=sqlsmall]
+SELECT strftime('%Y', transit_timestamp) AS year,
+COUNT(*) AS rows
+FROM ridership
+GROUP BY year ORDER BY year;
+			\end{lstlisting}
+		\end{block}
+		\vspace{0.15cm}
+		\resizebox{0.35\textwidth}{!}{
+			\begin{tabular}{@{}
+					>{\color{accentBlue}\bfseries}c
+					>{\color{softWhite}}r@{}}
+				\toprule
+				Year & Rows \\
+				\midrule
+				2020 & 20,339,851 \\
+				2021 & 23,281,980 \\
+				2022 & 24,635,810 \\
+				2023 & 25,585,413 \\
+				2024 & 27,012,513 \\
+				\midrule
+				\textbf{Total} & \textbf{120,855,567} \\
+				\bottomrule
+			\end{tabular}
+		}\\

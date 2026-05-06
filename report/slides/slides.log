@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.10.12)  23 APR 2026 14:07
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.10.12)  4 MAY 2026 20:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -846,127 +846,91 @@ File: tikzlibrarytopaths.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \CommentStream=\write5
 
 Excluding comment 'comment')
-(C:\Users\Jujop\AppData\Local\Programs\MiKTeX\tex/latex/media9\media9.sty
-Package: media9 2025/06/24 v1.30 acrobat-9/X compatible media
-\g_mix_pkgresizeflag_int=\count367
+(C:\Users\Jujop\AppData\Local\Programs\MiKTeX\tex/latex/booktabs\booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen315
+\lightrulewidth=\dimen316
+\cmidrulewidth=\dimen317
+\belowrulesep=\dimen318
+\belowbottomsep=\dimen319
+\aboverulesep=\dimen320
+\abovetopsep=\dimen321
+\cmidrulesep=\dimen322
+\cmidrulekern=\dimen323
+\defaultaddspace=\dimen324
+\@cmidla=\count367
+\@cmidlb=\count368
+\@aboverulesep=\dimen325
+\@belowrulesep=\dimen326
+\@thisruleclass=\count369
+\@lastruleclass=\count370
+\@thisrulewidth=\dimen327
+)
+(C:\Users\Jujop\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
+Package: array 2025/06/08 v2.6j Tabular extension package (FMi)
+\col@sep=\dimen328
+\ar@mcellbox=\box83
+\extrarowheight=\dimen329
+\NC@list=\toks48
+\extratabsurround=\skip67
+\backup@length=\skip68
+\ar@cellbox=\box84
+)
+(C:\Users\Jujop\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.sty
+\lst@mode=\count371
+\lst@gtempboxa=\box85
+\lst@token=\toks49
+\lst@length=\count372
+\lst@currlwidth=\dimen330
+\lst@column=\count373
+\lst@pos=\count374
+\lst@lostspace=\dimen331
+\lst@width=\dimen332
+\lst@newlines=\count375
+\lst@lineno=\count376
+\lst@maxwidth=\dimen333
 
-(C:\Users\Jujop\AppData\Local\Programs\MiKTeX\tex/latex/media9\pdfbase.sty
-Package: pdfbase 2024/09/16 v0.59 driver independent access to low-level PDF fe
-atures
+(C:\Users\Jujop\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstpatch.sty
+File: lstpatch.sty 2024/09/23 1.10c (Carsten Heinz)
+)
+(C:\Users\Jujop\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
+File: lstmisc.sty 2024/09/23 1.10c (Carsten Heinz)
+\c@lstnumber=\count377
+\lst@skipnumbers=\count378
+\lst@framebox=\box86
+)
+(C:\Users\Jujop\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.cfg
+File: listings.cfg 2024/09/23 1.10c listings configuration
+))
+Package: listings 2024/09/23 1.10c (Carsten Heinz)
+
+(C:\Users\Jujop\AppData\Local\Programs\MiKTeX\tex/latex/fontawesome5\fontawesom
+e5.sty
+(C:\Users\Jujop\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.sty
+Package: expl3 2025-09-02 L3 programming layer (loader) 
 
 (C:\Users\Jujop\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
 tex.def
 File: l3backend-pdftex.def 2025-06-09 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count368
-)
-\g_pbs_page_int=\count369
-\g_pbs_oc_int=\count370
-)
-(C:\Users\Jujop\AppData\Local\Programs\MiKTeX\tex/latex/ocgx2\ocgbase.sty
-Package: ocgbase 2024/09/15 v0.24 support package for ocgx2.sty
-)
-\l_mix_poster_box=\box83
-\g_mix_wd_dim=\dimen315
-\g_mix_ht_dim=\dimen316
-\g_mix_dp_dim=\dimen317
-\g_mix_rmcnt_int=\count371
-\l_mix_viewcnt_int=\count372
-\g@mix@page@int=\count373
-\g_mix_resizeflag_int=\count374
-\l_mix_lineno_int=\count375
-\l_mix_pbtn_box=\box84
-\g_mix_mbtncnt_int=\count376
-\mix@btn@dim=\dimen318
-)
-(C:\Users\Jujop\AppData\Local\Programs\MiKTeX\tex/latex/animate\animate.sty
-Package: animate 2024/10/14 PDF & SVG animations from files and inline graphics
+\l__color_backend_stack_int=\count379
+))
+Package: fontawesome5 2022/05/02 v5.15.4 Font Awesome 5
 
+(C:\Users\Jujop\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/l3keys2e\l3k
+eys2e.sty
+Package: l3keys2e 2024-08-16 LaTeX2e option processing using LaTeX3 keys
+)
+(C:\Users\Jujop\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse\xpars
+e.sty
+Package: xparse 2024-08-16 L3 Experimental document command parser
+)
+(C:\Users\Jujop\AppData\Local\Programs\MiKTeX\tex/latex/fontawesome5\fontawesom
+e5-generic-helper.sty
+Package: fontawesome5-generic-helper 2022/05/02 v5.15.4 non-uTeX helper for fon
+tawesome5
 
-(C:\Users\Jujop\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
-Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
-)
-(C:\Users\Jujop\AppData\Local\Programs\MiKTeX\tex/latex/oberdiek\ifdraft.sty
-Package: ifdraft 2016/05/16 v1.4 Detect class options draft and final (HO)
-)
-(C:\Users\Jujop\AppData\Local\Programs\MiKTeX\tex/latex/tools\calc.sty
-Package: calc 2025/03/01 v4.3b Infix arithmetic (KKT,FJ)
-\calc@Acount=\count377
-\calc@Bcount=\count378
-\calc@Adimen=\dimen319
-\calc@Bdimen=\dimen320
-\calc@Askip=\skip67
-\calc@Bskip=\skip68
-LaTeX Info: Redefining \setlength on input line 86.
-LaTeX Info: Redefining \addtolength on input line 87.
-\calc@Ccount=\count379
-\calc@Cskip=\skip69
-)
-(C:\Users\Jujop\AppData\Local\Programs\MiKTeX\tex/latex/zref\zref-abspage.sty
-Package: zref-abspage 2025-06-08 v2.36 Module abspage for zref (HO)
-
-(C:\Users\Jujop\AppData\Local\Programs\MiKTeX\tex/latex/zref\zref-base.sty
-Package: zref-base 2025-06-08 v2.36 Module base for zref (HO)
-
-(C:\Users\Jujop\AppData\Local\Programs\MiKTeX\tex/generic/etexcmds\etexcmds.sty
-Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
-) (C:\Users\Jujop\AppData\Local\Programs\MiKTeX\tex/latex/auxhook\auxhook.sty
-Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
-)
-Package zref Info: New property list: main on input line 767.
-Package zref Info: New property: default on input line 768.
-Package zref Info: New property: page on input line 769.
-)
-\c@abspage=\count380
-Package zref Info: New property: abspage on input line 67.
-)
-\@anim@box=\box85
-\@anim@measbox=\box86
-\@anim@tmpdima=\dimen321
-\@anim@tmpdimb=\dimen322
-\@anim@num=\count381
-\@anim@curframe=\count382
-\@anim@curframe@zb=\count383
-\@anim@resizeflags=\count384
-\@anim@skipfram=\count385
-\@anim@mulframecnt=\count386
-\@anim@@tmlnfile=\read3
-\@anim@tmpcnt=\count387
-\c@@anim@ltxcnt=\count388
-\@anim@curlayer=\count389
-\@anim@lineno=\count390
-\@anim@curfield=\count391
-\@anim@@resizeflags=\count392
-)
-(C:\Users\Jujop\AppData\Local\Programs\MiKTeX\tex/latex/booktabs\booktabs.sty
-Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
-\heavyrulewidth=\dimen323
-\lightrulewidth=\dimen324
-\cmidrulewidth=\dimen325
-\belowrulesep=\dimen326
-\belowbottomsep=\dimen327
-\aboverulesep=\dimen328
-\abovetopsep=\dimen329
-\cmidrulesep=\dimen330
-\cmidrulekern=\dimen331
-\defaultaddspace=\dimen332
-\@cmidla=\count393
-\@cmidlb=\count394
-\@aboverulesep=\dimen333
-\@belowrulesep=\dimen334
-\@thisruleclass=\count395
-\@lastruleclass=\count396
-\@thisrulewidth=\dimen335
-)
-(C:\Users\Jujop\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
-Package: array 2025/06/08 v2.6j Tabular extension package (FMi)
-\col@sep=\dimen336
-\ar@mcellbox=\box87
-\extrarowheight=\dimen337
-\NC@list=\toks48
-\extratabsurround=\skip70
-\backup@length=\skip71
-\ar@cellbox=\box88
-)
+(C:\Users\Jujop\AppData\Local\Programs\MiKTeX\tex/latex/fontawesome5\fontawesom
+e5-mapping.def)))
 (C:\Users\Jujop\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
 z/libraries\tikzlibrarypositioning.code.tex
 File: tikzlibrarypositioning.code.tex 2025-08-29 v3.1.11a (3.1.11a)
@@ -1018,55 +982,55 @@ File: tikzlibraryshapes.multipart.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 (C:\Users\Jujop\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shapes\
 pgflibraryshapes.multipart.code.tex
 File: pgflibraryshapes.multipart.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgfnodepartlowerbox=\box89
-\pgfnodeparttwobox=\box90
-\pgfnodepartthreebox=\box91
-\pgfnodepartfourbox=\box92
-\pgfnodeparttwentybox=\box93
-\pgfnodepartnineteenbox=\box94
-\pgfnodeparteighteenbox=\box95
-\pgfnodepartseventeenbox=\box96
-\pgfnodepartsixteenbox=\box97
-\pgfnodepartfifteenbox=\box98
-\pgfnodepartfourteenbox=\box99
-\pgfnodepartthirteenbox=\box100
-\pgfnodeparttwelvebox=\box101
-\pgfnodepartelevenbox=\box102
-\pgfnodeparttenbox=\box103
-\pgfnodepartninebox=\box104
-\pgfnodeparteightbox=\box105
-\pgfnodepartsevenbox=\box106
-\pgfnodepartsixbox=\box107
-\pgfnodepartfivebox=\box108
+\pgfnodepartlowerbox=\box87
+\pgfnodeparttwobox=\box88
+\pgfnodepartthreebox=\box89
+\pgfnodepartfourbox=\box90
+\pgfnodeparttwentybox=\box91
+\pgfnodepartnineteenbox=\box92
+\pgfnodeparteighteenbox=\box93
+\pgfnodepartseventeenbox=\box94
+\pgfnodepartsixteenbox=\box95
+\pgfnodepartfifteenbox=\box96
+\pgfnodepartfourteenbox=\box97
+\pgfnodepartthirteenbox=\box98
+\pgfnodeparttwelvebox=\box99
+\pgfnodepartelevenbox=\box100
+\pgfnodeparttenbox=\box101
+\pgfnodepartninebox=\box102
+\pgfnodeparteightbox=\box103
+\pgfnodepartsevenbox=\box104
+\pgfnodepartsixbox=\box105
+\pgfnodepartfivebox=\box106
 )))
 (C:\Users\Jujop\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibr
 aryarrows.meta.code.tex
 File: pgflibraryarrows.meta.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgfarrowinset=\dimen338
-\pgfarrowlength=\dimen339
-\pgfarrowwidth=\dimen340
-\pgfarrowlinewidth=\dimen341
+\pgfarrowinset=\dimen334
+\pgfarrowlength=\dimen335
+\pgfarrowwidth=\dimen336
+\pgfarrowlinewidth=\dimen337
 ) (slides.aux)
 \openout1 = `slides.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 62.
-LaTeX Font Info:    ... okay on input line 62.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 62.
-LaTeX Font Info:    ... okay on input line 62.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 62.
-LaTeX Font Info:    ... okay on input line 62.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 62.
-LaTeX Font Info:    ... okay on input line 62.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 62.
-LaTeX Font Info:    ... okay on input line 62.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 62.
-LaTeX Font Info:    ... okay on input line 62.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 62.
-LaTeX Font Info:    ... okay on input line 62.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 62.
-LaTeX Font Info:    ... okay on input line 62.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 62.
-LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 112.
+LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 112.
+LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 112.
+LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 112.
+LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 112.
+LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 112.
+LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 112.
+LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 112.
+LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 112.
+LaTeX Font Info:    ... okay on input line 112.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1106,17 +1070,17 @@ LaTeX Font Info:    ... okay on input line 62.
 (C:\Users\Jujop\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
 ii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count397
-\scratchdimen=\dimen342
-\scratchbox=\box109
-\nofMPsegments=\count398
-\nofMParguments=\count399
-\everyMPshowfont=\toks49
-\MPscratchCnt=\count400
-\MPscratchDim=\dimen343
-\MPnumerator=\count401
-\makeMPintoPDFobject=\count402
-\everyMPtoPDFconversion=\toks50
+\scratchcounter=\count380
+\scratchdimen=\dimen338
+\scratchbox=\box107
+\nofMPsegments=\count381
+\nofMParguments=\count382
+\everyMPshowfont=\toks50
+\MPscratchCnt=\count383
+\MPscratchDim=\dimen339
+\MPnumerator=\count384
+\makeMPintoPDFobject=\count385
+\everyMPtoPDFconversion=\toks51
 )
 (C:\Users\Jujop\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
 ase.sty
@@ -1128,63 +1092,63 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 fg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-Package hyperref Info: Link coloring OFF on input line 62.
+Package hyperref Info: Link coloring OFF on input line 112.
  (slides.out) (slides.out)
 \@outlinefile=\write6
 \openout6 = `slides.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 62.
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 112.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 62.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 112.
 \symnumbers=\mathgroup6
 \sympureletters=\mathgroup7
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 62.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 62.
+(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 112.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 112.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 62.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 112.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 62.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 62.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 112.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 112.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 62.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 112.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 62.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 62.
+(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 112.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 112.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 62.
+(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 112.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 62.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 62.
+(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 112.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 112.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 62.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 112.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 62.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 112.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 62.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 112.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 62.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 112.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/b/n --> OT1/cmr/b/n on input line 62.
+(Font)                  OT1/cmss/b/n --> OT1/cmr/b/n on input line 112.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmss/b/n --> OT1/cmss/b/n on input line 62.
+(Font)                  OT1/cmss/b/n --> OT1/cmss/b/n on input line 112.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 62.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 112.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 62.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 112.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/b/n on input line 62.
-LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 62.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/b/n on input line 112.
+LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 112.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `normal'
-(Font)                  OT1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 6
-2.
+(Font)                  OT1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 1
+12.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/cmss/b/it --> OT1/mathkerncmss/m/sl on input line 6
-2.
+(Font)                  OT1/cmss/b/it --> OT1/mathkerncmss/m/sl on input line 1
+12.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on inp
-ut line 62.
+ut line 112.
 
 (C:\Users\Jujop\AppData\Local\Programs\MiKTeX\tex/latex/translator\translator-b
 asic-dictionary-English.dict
@@ -1209,41 +1173,41 @@ Dictionary: translator-numbers-dictionary, Language: English
 (C:\Users\Jujop\AppData\Local\Programs\MiKTeX\tex/latex/translator\translator-t
 heorem-dictionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
-) (slides.nav)
+)
+\c@lstlisting=\count386
+ (slides.nav)
+Overfull \hbox (4.25006pt too wide) in paragraph at lines 112--112
+[][][][]  
+ []
 
-[1
 
-{C:/Users/Jujop/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
-
-[2
-
-] (slides.toc)
-
-[3
-
-]
-Overfull \hbox (6.26596pt too wide) in paragraph at lines 136--136
- [][] 
+Overfull \hbox (4.25006pt too wide) in paragraph at lines 132--132
+[][][][]  
  []
 
 
 
-[4
+[1
 
-]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 162
+{C:/Users/Jujop/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/Jujo
+p/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
+Overfull \hbox (4.25006pt too wide) in paragraph at lines 167--167
+[][][][]  
+ []
+
+LaTeX Font Info:    Trying to load font information for U+msa on input line 167
 .
- (C:\Users\Jujop\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+(C:\Users\Jujop\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 162
+LaTeX Font Info:    Trying to load font information for U+msb on input line 167
 .
 
 (C:\Users\Jujop\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on inp
-ut line 162.
+ut line 167.
 
 (C:\Users\Jujop\AppData\Local\Programs\MiKTeX\tex/latex/sansmathaccent\ot1mathk
 erncmss.fd
@@ -1251,97 +1215,376 @@ File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/ma
 thkerncmss.
 )
 
-[5
+
+Overfull \hbox (4.25006pt too wide) has occurred while \output is active
+[][][][] 
+ []
+
+[2
 
 ]
 
-[6
+
+Overfull \hbox (4.25006pt too wide) has occurred while \output is active
+[][][][] 
+ []
+
+[3
 
 ]
-
-[7
-
-]
-
-[8
-
-]
-
-[9
-
-{C:/Users/Jujop/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/cm-super/cm-super
--ts1.enc}]
-
-[10
-
-]
-
-[11
-
-]
-LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <10> not available
-(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 324.
-
-LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <7> not available
-(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 324.
-
-LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <5> not available
-(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 324.
+Overfull \hbox (4.25006pt too wide) in paragraph at lines 232--232
+[][][][]  
+ []
 
 
-
-[12
-
-]
-LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <10.95> not available
-(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 348.
-
-LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <8> not available
-(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 348.
-
-LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <6> not available
-(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 348.
-
-
-
-[13
-
-]
-LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <14.4> not available
-(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 360.
-
-
-
-[14
-
-]
-
-[15
-
-]
-
-[16
-
-]
-Overfull \hbox (6.26596pt too wide) in paragraph at lines 441--441
+Overfull \hbox (6.26596pt too wide) in paragraph at lines 232--232
  [][] 
  []
 
 
 
+
+Overfull \hbox (4.25006pt too wide) has occurred while \output is active
+[][][][] 
+ []
+
+[4
+
+]
+Overfull \hbox (4.25006pt too wide) in paragraph at lines 266--266
+[][][][]  
+ []
+
+
+Overfull \vbox (3.54008pt too high) detected at line 266
+ []
+
+
+
+
+Overfull \hbox (4.25006pt too wide) has occurred while \output is active
+[][][][] 
+ []
+
+[5
+
+]
+Overfull \hbox (4.25006pt too wide) in paragraph at lines 293--293
+[][][][]  
+ []
+
+
+
+
+Overfull \hbox (4.25006pt too wide) has occurred while \output is active
+[][][][] 
+ []
+
+[6
+
+]
+Overfull \hbox (4.25006pt too wide) in paragraph at lines 302--302
+[][][][]  
+ []
+
+\openout4 = `slides.vrb'.
+
+
+Overfull \hbox (4.25006pt too wide) in paragraph at lines 324--324
+[][][][]  
+ []
+
+(slides.vrb
+(C:\Users\Jujop\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
+File: lstlang1.sty 2024/09/23 1.10c listings language file
+))
+LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <12> not available
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 324.
+
+
+
+Overfull \hbox (4.25006pt too wide) has occurred while \output is active
+[][][][] 
+ []
+
+[7
+
+]
+Overfull \hbox (4.25006pt too wide) in paragraph at lines 333--333
+[][][][]  
+ []
+
+\openout4 = `slides.vrb'.
+
+
+Overfull \hbox (4.25006pt too wide) in paragraph at lines 353--353
+[][][][]  
+ []
+
+(slides.vrb)
+
+
+Overfull \hbox (4.25006pt too wide) has occurred while \output is active
+[][][][] 
+ []
+
+[8
+
+]
+Overfull \hbox (4.25006pt too wide) in paragraph at lines 358--358
+[][][][]  
+ []
+
+\openout4 = `slides.vrb'.
+
+
+Overfull \hbox (4.25006pt too wide) in paragraph at lines 393--393
+[][][][]  
+ []
+
+(slides.vrb
+(C:\Users\Jujop\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
+File: lstlang1.sty 2024/09/23 1.10c listings language file
+)
+LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <8> not available
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 7.
+)
+
+
+Overfull \hbox (4.25006pt too wide) has occurred while \output is active
+[][][][] 
+ []
+
+[9
+
+]
+Overfull \hbox (4.25006pt too wide) in paragraph at lines 398--398
+[][][][]  
+ []
+
+\openout4 = `slides.vrb'.
+
+
+Overfull \hbox (4.25006pt too wide) in paragraph at lines 428--428
+[][][][]  
+ []
+
+(slides.vrb)
+Overfull \vbox (4.47pt too high) detected at line 428
+ []
+
+
+
+
+Overfull \hbox (4.25006pt too wide) has occurred while \output is active
+[][][][] 
+ []
+
+[10
+
+]
+Overfull \hbox (4.25006pt too wide) in paragraph at lines 455--455
+[][][][]  
+ []
+
+
+
+
+Overfull \hbox (4.25006pt too wide) has occurred while \output is active
+[][][][] 
+ []
+
+[11
+
+]
+Overfull \hbox (4.25006pt too wide) in paragraph at lines 490--490
+[][][][]  
+ []
+
+<C:/Users/Jujop/Documents/GitHub/mta-transit-pulse/report/figures/top_ridership
+_borough.png, id=154, 712.5822pt x 426.393pt>
+File: C:/Users/Jujop/Documents/GitHub/mta-transit-pulse/report/figures/top_ride
+rship_borough.png Graphic file (type png)
+<use C:/Users/Jujop/Documents/GitHub/mta-transit-pulse/report/figures/top_rider
+ship_borough.png>
+Package pdftex.def Info: C:/Users/Jujop/Documents/GitHub/mta-transit-pulse/repo
+rt/figures/top_ridership_borough.png  used on input line 490.
+(pdftex.def)             Requested size: 171.14764pt x 102.40797pt.
+
+
+
+Overfull \hbox (4.25006pt too wide) has occurred while \output is active
+[][][][] 
+ []
+
+[12
+
+ <C:/Users/Jujop/Documents/GitHub/mta-transit-pulse/report/figures/top_ridershi
+p_borough.png>]
+Overfull \hbox (4.25006pt too wide) in paragraph at lines 512--512
+[][][][]  
+ []
+
+<C:/Users/Jujop/Documents/GitHub/mta-transit-pulse/report/figures/total_ridersh
+ip_per_hour.png, id=162, 714.5094pt x 423.984pt>
+File: C:/Users/Jujop/Documents/GitHub/mta-transit-pulse/report/figures/total_ri
+dership_per_hour.png Graphic file (type png)
+<use C:/Users/Jujop/Documents/GitHub/mta-transit-pulse/report/figures/total_rid
+ership_per_hour.png>
+Package pdftex.def Info: C:/Users/Jujop/Documents/GitHub/mta-transit-pulse/repo
+rt/figures/total_ridership_per_hour.png  used on input line 512.
+(pdftex.def)             Requested size: 171.14764pt x 101.55768pt.
+<C:/Users/Jujop/Documents/GitHub/mta-transit-pulse/report/figures/total_ridersh
+ip_per_day.png, id=163, 714.5094pt x 423.984pt>
+File: C:/Users/Jujop/Documents/GitHub/mta-transit-pulse/report/figures/total_ri
+dership_per_day.png Graphic file (type png)
+<use C:/Users/Jujop/Documents/GitHub/mta-transit-pulse/report/figures/total_rid
+ership_per_day.png>
+Package pdftex.def Info: C:/Users/Jujop/Documents/GitHub/mta-transit-pulse/repo
+rt/figures/total_ridership_per_day.png  used on input line 512.
+(pdftex.def)             Requested size: 171.14764pt x 101.55768pt.
+
+
+
+Overfull \hbox (4.25006pt too wide) has occurred while \output is active
+[][][][] 
+ []
+
+[13
+
+ <C:/Users/Jujop/Documents/GitHub/mta-transit-pulse/report/figures/total_riders
+hip_per_hour.png> <C:/Users/Jujop/Documents/GitHub/mta-transit-pulse/report/fig
+ures/total_ridership_per_day.png>]
+Overfull \hbox (4.25006pt too wide) in paragraph at lines 526--526
+[][][][]  
+ []
+
+<C:/Users/Jujop/Documents/GitHub/mta-transit-pulse/report/figures/omny_vs_metro
+card.png, id=172, 860.013pt x 426.393pt>
+File: C:/Users/Jujop/Documents/GitHub/mta-transit-pulse/report/figures/omny_vs_
+metrocard.png Graphic file (type png)
+<use C:/Users/Jujop/Documents/GitHub/mta-transit-pulse/report/figures/omny_vs_m
+etrocard.png>
+Package pdftex.def Info: C:/Users/Jujop/Documents/GitHub/mta-transit-pulse/repo
+rt/figures/omny_vs_metrocard.png  used on input line 526.
+(pdftex.def)             Requested size: 290.9531pt x 144.2495pt.
+
+
+
+Overfull \hbox (4.25006pt too wide) has occurred while \output is active
+[][][][] 
+ []
+
+[14
+
+ <C:/Users/Jujop/Documents/GitHub/mta-transit-pulse/report/figures/omny_vs_metr
+ocard.png>]
+Overfull \hbox (4.25006pt too wide) in paragraph at lines 540--540
+[][][][]  
+ []
+
+<C:/Users/Jujop/Documents/GitHub/mta-transit-pulse/report/figures/covid_recover
+y.png, id=179, 787.743pt x 425.9112pt>
+File: C:/Users/Jujop/Documents/GitHub/mta-transit-pulse/report/figures/covid_re
+covery.png Graphic file (type png)
+<use C:/Users/Jujop/Documents/GitHub/mta-transit-pulse/report/figures/covid_rec
+overy.png>
+Package pdftex.def Info: C:/Users/Jujop/Documents/GitHub/mta-transit-pulse/repo
+rt/figures/covid_recovery.png  used on input line 540.
+(pdftex.def)             Requested size: 290.9531pt x 157.3117pt.
+
+
+
+Overfull \hbox (4.25006pt too wide) has occurred while \output is active
+[][][][] 
+ []
+
+[15
+
+ <C:/Users/Jujop/Documents/GitHub/mta-transit-pulse/report/figures/covid_recove
+ry.png>]
+Overfull \hbox (4.25006pt too wide) in paragraph at lines 593--593
+[][][][]  
+ []
+
+
+
+
+Overfull \hbox (4.25006pt too wide) has occurred while \output is active
+[][][][] 
+ []
+
+[16
+
+]
+Overfull \hbox (4.25006pt too wide) in paragraph at lines 621--621
+[][][][]  
+ []
+
+
+
+
+Overfull \hbox (4.25006pt too wide) has occurred while \output is active
+[][][][] 
+ []
+
 [17
 
 ]
+Overfull \hbox (4.25006pt too wide) in paragraph at lines 637--637
+[][][][]  
+ []
+
+
+
+
+Overfull \hbox (4.25006pt too wide) has occurred while \output is active
+[][][][] 
+ []
 
 [18
 
 ]
+Overfull \hbox (4.25006pt too wide) in paragraph at lines 669--669
+[][][][]  
+ []
+
+
+
+
+Overfull \hbox (4.25006pt too wide) has occurred while \output is active
+[][][][] 
+ []
 
 [19
 
 ]
+Overfull \hbox (4.25006pt too wide) in paragraph at lines 686--686
+[][][][]  
+ []
+
+
+
+
+Overfull \hbox (4.25006pt too wide) has occurred while \output is active
+[][][][] 
+ []
 
 [20
+
+]
+Overfull \hbox (4.25006pt too wide) in paragraph at lines 730--730
+[][][][]  
+ []
+
+
+
+
+Overfull \hbox (4.25006pt too wide) has occurred while \output is active
+[][][][] 
+ []
+
+[21
 
 ]
 \tf@nav=\write7
@@ -1359,38 +1602,36 @@ LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-09-02>
  ***********
 Package rerunfilecheck Info: File `slides.out' has not changed.
-(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+(rerunfilecheck)             Checksum: 870A5B107C06745C29E91A1A55E7CDA3;832.
  ) 
 Here is how much of TeX's memory you used:
- 29358 strings out of 468130
- 614113 string characters out of 5430632
- 1035958 words of memory out of 5000000
- 57340 multiletter control sequences out of 15000+600000
- 643506 words of font info for 99 fonts, out of 8000000 for 9000
+ 32530 strings out of 468130
+ 668547 string characters out of 5430632
+ 1283586 words of memory out of 5000000
+ 60497 multiletter control sequences out of 15000+600000
+ 641896 words of font info for 95 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 128i,15n,123p,383b,722s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 128i,15n,123p,383b,1981s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/Jujop/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
-cmex10.pfb><C:/Users/Jujop/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
-fonts/cm/cmmi10.pfb><C:/Users/Jujop/AppData/Local/Programs/MiKTeX/fonts/type1/p
-ublic/amsfonts/cm/cmmi12.pfb><C:/Users/Jujop/AppData/Local/Programs/MiKTeX/font
-s/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Jujop/AppData/Local/Programs/MiK
-TeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Jujop/AppData/Local/Progr
-ams/MiKTeX/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Users/Jujop/AppData/Lo
-cal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss12.pfb><C:/Users/Jujop/A
-ppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss8.pfb><C:/Users
-/Jujop/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss9.pfb><
-C:/Users/Jujop/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cms
-sbx10.pfb><C:/Users/Jujop/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsf
-onts/cm/cmssi10.pfb><C:/Users/Jujop/AppData/Local/Programs/MiKTeX/fonts/type1/p
-ublic/amsfonts/cm/cmssi12.pfb><C:/Users/Jujop/AppData/Local/Programs/MiKTeX/fon
-ts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Jujop/AppData/Local/Programs/M
-iKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/Jujop/AppData/Local/Pr
-ograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Jujop/AppData/
-Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/Jujop
-/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfss1095.pfb>
-Output written on slides.pdf (20 pages, 216908 bytes).
+cmitt10.pfb><C:/Users/Jujop/AppData/Local/Programs/MiKTeX/fonts/type1/public/am
+sfonts/cm/cmmi10.pfb><C:/Users/Jujop/AppData/Local/Programs/MiKTeX/fonts/type1/
+public/amsfonts/cm/cmss10.pfb><C:/Users/Jujop/AppData/Local/Programs/MiKTeX/fon
+ts/type1/public/amsfonts/cm/cmss12.pfb><C:/Users/Jujop/AppData/Local/Programs/M
+iKTeX/fonts/type1/public/amsfonts/cm/cmss8.pfb><C:/Users/Jujop/AppData/Local/Pr
+ograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Users/Jujop/AppDa
+ta/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssi10.pfb><C:/Users/J
+ujop/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C
+:/Users/Jujop/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt
+10.pfb><C:/Users/Jujop/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfont
+s/cm/cmtt12.pfb><C:/Users/Jujop/AppData/Local/Programs/MiKTeX/fonts/type1/publi
+c/amsfonts/cm/cmtt8.pfb><C:/Users/Jujop/AppData/Local/Programs/MiKTeX/fonts/typ
+e1/public/cm-super/sfss0800.pfb><C:/Users/Jujop/AppData/Local/Programs/MiKTeX/f
+onts/type1/public/cm-super/sfss1000.pfb><C:/Users/Jujop/AppData/Local/Programs/
+MiKTeX/fonts/type1/public/cm-super/sfss1095.pfb><C:/Users/Jujop/AppData/Local/P
+rograms/MiKTeX/fonts/type1/public/cm-super/sftt0800.pfb>
+Output written on slides.pdf (21 pages, 442221 bytes).
 PDF statistics:
- 240 PDF objects out of 1000 (max. 8388607)
- 41 named destinations out of 1000 (max. 500000)
- 49 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 306 PDF objects out of 1000 (max. 8388607)
+ 51 named destinations out of 1000 (max. 500000)
+ 282 words of extra memory for PDF output out of 10000 (max. 10000000)
 
